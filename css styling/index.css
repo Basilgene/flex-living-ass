@@ -1,0 +1,316 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 80%;
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+
+/* We rent section */
+
+main .container {
+    background-color: #ffff;
+    width: 100%;
+    height: 80vh;
+    background-image: url("../images/Image\ \(1\).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 6em;
+
+}
+
+main .container .card {
+    background-color: #ffff;
+    width: 400px;
+    height: 250px;
+    border: 1px solid #ffff;
+    padding: 50px;
+    border-radius: 0 30px 30px 0;
+}
+
+main .container .card h1 {
+    color: #181A18;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+}
+
+main .container .card p {
+    color: #181A18;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    padding-top: 10px;
+}
+
+
+/*Future section */
+
+.future {
+    height: 70vh;
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.future .left-img {
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.future .left-img .img-fut {
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.future .right-text {
+    width: 50%;
+    text-align: center;
+    padding-top: 10em;
+    background-color: #F2F0F2;
+    border-radius: 0px 60px 60px 0px;
+}
+
+.right-text .fut-text {
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #181A18;
+    padding-bottom: 10px;
+
+}
+
+.right-text .fut-texts {
+    font-family: Lato;
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 0.9;
+    color: #181A18;
+}
+
+    /*Features section*/
+
+.features {
+    background-color: #ffff;
+    height: 80vh;
+    width: 80%;
+    margin: 100px auto;
+
+}
+
+.features .feat-tex {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.features .feat-tex .feat-tex1 {
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    color: #181A18;
+}
+
+
+.features .feat-tex .feat-tex2 {
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+    color: #181A18;
+}
+
+.features .feat-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.features .feat-cards .card-1 {
+    width: 200px;
+    height: 170px;
+    background-color: #E2F1E8;
+    padding: 20px 15px;
+    border-radius: 10px;
+
+}
+
+.features .feat-cards .card-1 .card .ico {
+    font-size: 35px;
+    color: #181A18;
+
+}
+
+.features .feat-cards .card-1 .card-tx {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+    padding-top: 10px;
+    color: #181A18;
+
+}
+
+.features .feat-cards .card-1 .card-tex {
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: left;
+    padding-top: 15px;
+    color: #181A18;
+
+}
+
+/* responsiveness*/
+
+/*For mobile */
+
+
+@media(max-width: 425px) {
+    header {
+        width: 100%;
+        padding-right: 20px;
+    }
+    header .logo {
+        font-size: 15px;
+    }
+
+    nav ul {
+      gap: 10px;
+      font-size: 15px;
+      padding-right: 15px;  
+    }
+
+    main .container {
+        height: 50vh;
+        padding-top: 4em;
+    }
+
+    main .container .card {
+        width: 200px;
+        height: 150px;
+        padding: 50px;
+    }
+
+    main .container .card h1 {
+        font-size: 10px;
+    }
+
+    main .container .card p {
+        font-size: 8px;
+    }
+
+    .future {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .future .left-img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .future .left-img .img-fut {
+        height: 8em;
+    }
+
+    .future .right-text {
+        width: 100%;
+        padding-bottom: 4em;
+        padding-top: 5em;
+    }
+
+    .right-text .fut-text {
+        font-size: 15px;
+        padding-bottom: 1em;
+
+    }
+
+    .right-text .fut-texts {
+        font-size: 8px;
+    }
+
+    .features .feat-tex {
+        width: 100%;
+    }
+
+
+    .features .feat-tex .feat-tex1 {
+        font-size: 25px;
+        line-height: 20px;
+        padding-top: 100px;
+
+    }
+
+    .features .feat-tex .feat-tex2 {
+        font-size: 8px;
+        line-height: 20px;
+
+    }
+
+    .features .feat-cards .card-1 .card .ico {
+        font-size: 20px;
+    }
+
+    .features .feat-cards .card-1 .card-tx {
+        font-size: 10px;
+    }
+
+    .features .feat-cards .card-1 .card-tex {
+        font-size: 8px;
+        margin-bottom: 18px;
+    }
+    
+}
+
+/*for tablet*/
+
+@media(max-width: 768px) {
+
+    .future .fut-section {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+
+}
