@@ -75,11 +75,11 @@ main .container .card p {
 /*Future section */
 
 .future {
-    height: 70vh;
+    height: 60vh;
     width: 80%;
     margin: 100px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: centre;
 }
 
 .future .left-img {
@@ -98,7 +98,7 @@ main .container .card p {
     text-align: center;
     padding-top: 10em;
     background-color: #F2F0F2;
-    border-radius: 0px 60px 60px 0px;
+    border-radius: 0px 40px 40px 0px;
 }
 
 .right-text .fut-text {
@@ -126,7 +126,6 @@ main .container .card p {
     height: 80vh;
     width: 80%;
     margin: 100px auto;
-
 }
 
 .features .feat-tex {
@@ -202,8 +201,36 @@ main .container .card p {
 
 /* responsiveness*/
 
-/*For mobile */
+/*for tablet*/
 
+@media(max-width: 768px) {
+    main .container .card {
+        height: 200px;
+        width: 300px;
+    }
+
+    main .container .card h1 {
+        font-size: 20px;
+    }
+
+    .future {
+        height: 50vh;
+    }
+
+    .future .right-text {
+        padding-top: 6em;
+    }
+
+    .features .feat-tex .feat-tex1 {
+        font-size: 20px;
+    }
+
+    .features .feat-cards .card-1 .card .ico {
+        font-size: 25px;
+    }
+}
+
+/*For mobile */
 
 @media(max-width: 425px) {
     header {
@@ -242,6 +269,8 @@ main .container .card p {
     .future {
         flex-direction: column;
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .future .left-img {
@@ -251,7 +280,7 @@ main .container .card p {
     }
 
     .future .left-img .img-fut {
-        height: 8em;
+        min-height: 7em;
     }
 
     .future .right-text {
@@ -268,6 +297,10 @@ main .container .card p {
 
     .right-text .fut-texts {
         font-size: 8px;
+    }
+
+    .features {
+        margin: 170px auto;
     }
 
     .features .feat-tex {
@@ -298,19 +331,7 @@ main .container .card p {
 
     .features .feat-cards .card-1 .card-tex {
         font-size: 8px;
-        margin-bottom: 18px;
     }
+ 
     
-}
-
-/*for tablet*/
-
-@media(max-width: 768px) {
-
-    .future .fut-section {
-        flex-direction: column;
-        width: 100%;
-    }
-    
-
 }
